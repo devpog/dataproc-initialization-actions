@@ -35,7 +35,7 @@ else
     ## specify Miniconda release (e.g., MINICONDA_VER='4.0.5')
     if [[ ! -v MINICONDA_VER ]]; then
         echo "MINICONDA_VER not set, setting ..."
-        MINICONDA_VER='latest'
+        MINICONDA_VER='4.2.12'
         set "Set MINICONDA_VER to $MINICONDA_VER"
     fi
 
