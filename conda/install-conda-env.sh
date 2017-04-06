@@ -54,7 +54,7 @@ if conda info --envs | grep -q $CONDA_ENV_NAME
     echo "conda environment $CONDA_ENV_NAME detected, skipping env creation..."
 else
     echo "Creating conda environment directly..."
-    conda create --quiet --yes --name=$CONDA_ENV_NAME python || true
+    conda create --quiet --yes --name=$CONDA_ENV_NAME python=3.5 || true
     echo "conda environment $CONDA_ENV_NAME created..."
 fi
 if [[ ! $CONDA_ENV_NAME == 'root' ]]
